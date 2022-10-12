@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gestión Personas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/global.css'>
+    <script src='../js/Marcas.js'></script>
+</head>
+<body>
+    <form id="marcas" name="marcas">
+        <div id="divBodyMarcas" class="bodyGeneral">
+                <div id="encabezado" class="divEncabezado">
+                    <label>Marcas</label>
+                </div>
+                <div id="data" class="divData">
+                    <table class="widthTable">
+                        <tr>
+                            <td>
+                                <label>Nombre:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="nombre" id="nombre" value="">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="widthTable">
+                      <tr>
+                        <td width="114"><label>Estado:</label></td>
+                        <td width="164"><input type="text" name="" id="" value=""></td>
+                      </tr>
+                    </table>
+                </div>
+                <div id="botones" class="divBotones">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="button" value="Agregar" onclick="Agregar();">
+                            </td>
+                            <td>
+                                <input type="button" value="Modificar" onclick="Modificar();">
+                            </td>
+                            <td>
+                                <input type="button" value="Consultar" onclick="Consultar();">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="dataResult" class="divDataResult">
+                    <table id="tabData">
+                        <thead class="tHeadData">
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Estado</td>
+                                                                
+                                <td colspan="2">ACCIONES</td>                                
+                            </tr>
+                        </thead>
+                        <tbody id="tDataResult">
+                            <!-- Aquí va la consulta de la base de datos -->                            
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </form>
+</body>
+</html>

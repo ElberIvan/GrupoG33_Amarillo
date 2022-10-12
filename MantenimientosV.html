@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gestión Personas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/global.css'>
+    <script src='../js/Personas.js'></script>
+</head>
+<body>
+    <form id="mantenimientos" name="mantenimientos">
+        <div id="divBodyMantenimientos" class="bodyGeneral">
+                <div id="encabezado" class="divEncabezado">
+                    <label>Registro Mantenimientos</label>
+                </div>
+                <div id="data" class="divData">
+                    <table class="widthTable">
+                        <tr>
+                            <td>
+                                <label>Fecha Ingreso:</label>
+                            </td>
+                            <td>
+                                <input type="date" name="fechaIngreso" id="fechaIngreso" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Fecha Salida:</label>
+                            </td>
+                            <td>                            
+                                <input type="date" name="fechaSalida" id="fechaSalida" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Observaciones:</label>
+                            </td>
+                            <td>                            
+                                <input type="text" name="observaciones" id="observaciones" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Estatus:</label>
+                            </td>
+                            <td>                            
+                                <input type="text" name="estatus" id="estatus" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Ultima Modifecación:</label>
+                            </td>
+                            <td>                            
+                                <input type="text" name="ultimaModificacion" id="ultimaModificacion" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Comentarios Técnicos:</label>
+                            </td>
+                            <td>                            
+                                <input type="text" name="comentariosTecnicos" id="comentariosTecnicos" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Revisión Técnica de:</label>
+                            </td>
+                            <td>                            
+                                <input type="text" name="revisionTecnicaDe" id="revisionTecnicaDe" value="">
+                            </td>
+                        </tr>
+                       
+                    </table>
+                    <table class="widthTable">
+                      <tr>
+                        <td width="114"><label>Estado:</label></td>
+                        <td width="164"><input type="text" name="celular2" id="celular2" value=""></td>
+                      </tr>
+                    </table>
+                </div>
+                <div id="botones" class="divBotones">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="button" value="Agregar" onclick="Agregar();">
+                            </td>
+                            <td>
+                                <input type="button" value="Modificar" onclick="Modificar();">
+                            </td>
+                            <td>
+                                <input type="button" value="Consultar" onclick="Consultar();">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="dataResult" class="divDataResult">
+                    <table id="tabData">
+                        <thead class="tHeadData">
+                            <tr>
+                                <td>Fecha Ingreso</td>
+                                <td>Fecha Salida</td>
+                                
+                                <td colspan="2">ACCIONES</td>                                
+                            </tr>
+                        </thead>
+                        <tbody id="tDataResult">
+                            <!-- Aquí va la consulta de la base de datos -->                            
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </form>
+</body>
+</html>
